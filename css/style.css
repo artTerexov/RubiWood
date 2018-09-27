@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Raleway-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Raleway-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Raleway-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Raleway-Light.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/PlayfairDisplay-Bold.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/PlayfairDisplay-Regular.ttf") format("ttf");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway-Light", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #5e5e5e;
+  background-color: #fdfaf3;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+img {
+  width: 100;
+  height: auto;
+}
+
+.body__wrapper {
+  width: 1163px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.page-header {
+  position: relative;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  width: 679px;
+  height: 770px;
+  background-color: rgba(24,44,61,.97);
+  top: 0;
+  left: -105px;
+  z-index: -1;
+}
+
+.page-header__bg {
+  position: absolute;
+  top: 84px;
+  z-index: -2;
+}
+
+.main-nav__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+  /*background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+}
+
+.main-nav__item {
+  display: flex;
+}
+
+.main-nav__link {
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #8c969e;
+  padding-top: 30px;
+  letter-spacing: 0.5px;
+  /*background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+}
+
+.main-nav__link:hover {
+  color: rgba(248,162,90,0.8);
+}
+
+.main-nav__link:active {
+  color: rgba(248,162,90,1);
+}
+
+.page-header__phone::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 15px;
+  background-image: url("../img/phone_logo.png");
+  background-repeat: no-repeat;
+  left: -20px;
+}
+
+.page-header__phone {
+  position: relative;
+  margin-top: 32px;
+  margin-left: 70px;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+
+.page-header__logo-image {
+  padding-top: 10px;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 170px;
+  margin-left: 100px;
+  width: 325px;
+  padding-bottom: 240px;
+}
+
+.intro__caption {
+  font-family: "Raleway-SemiBold", sans-serif;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.intro__text {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 30px;
+  /*background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);*/
+}
+
+.intro__btn {
+  position: relative;
+  display: block;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  width: 225px;
+  height: 35px;
+  background-color: #f8a25a;
+  color: #ffffff;
+}
+
+.intro__btn::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 10px;
+  background-image: url("../img/arrow-icon.png");
+  background-repeat: no-repeat;
+  bottom: 21px;
+  right: 30px;
+}
