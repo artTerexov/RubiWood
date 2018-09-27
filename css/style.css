@@ -33,7 +33,7 @@ body {
   font-family: "Raleway-Light", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #5e5e5e;
+  color: #000000;
   background-color: #fdfaf3;
 }
 
@@ -92,7 +92,7 @@ img {
   font-family: "Raleway-SemiBold", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  color: #8c969e;
+  color: #808080;
   padding-top: 30px;
   letter-spacing: 0.5px;
   /*background: rgba(234, 255, 45, 0.2);
