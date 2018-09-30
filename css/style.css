@@ -189,6 +189,7 @@ a {
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-between;
   margin: 0;
@@ -384,14 +385,7 @@ a {
   outline: none;
 }
 
-/*.contact_map {
-  background-image: url("../img/map.png");
-  height: 350px;
-}*/
-
 .contact_map{
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   margin: 0;
   padding: 0;
 }
@@ -399,7 +393,4 @@ a {
 .contact_map iframe {
   border: none;
   width: 100%;
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
-  position: center;
 }
