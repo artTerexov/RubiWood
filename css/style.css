@@ -202,7 +202,6 @@ a {
 
 .advantages__list {
   display: flex;
-  flex-wrap: wrap;
   list-style-type: none;
   justify-content: space-between;
   margin: 0;
@@ -210,7 +209,9 @@ a {
 }
 
 .advantages__item {
-  width: 270px;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
 }
 
 .advantages__item:nth-child(even) {
@@ -240,9 +241,7 @@ a {
 
 .portfolio {
   padding: 0 100px;
-  padding-top: 120px;
-
-
+  padding-top: 120px
 }
 
 .portfolio__title {
