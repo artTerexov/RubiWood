@@ -48,6 +48,19 @@ a {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   position: relative;
   padding: 0 100px;
@@ -393,4 +406,65 @@ a {
 .contact_map iframe {
   border: none;
   width: 100%;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 100px;
+}
+
+.trade-mark {
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 20px;
+}
+
+.social-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 46px;
+  height: 48px;
+  background-color: #182c3d;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #2a3c4b;
+}
+
+.social-button:active {
+  background-color: #112638;
+}
+
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
+.developer__name {
+  position: relative;
+  font-family: "Raleway-SemiBold", sans-serif;
+  color: #000000;
+  font-size: 15px;
+}
+
+.developer__name::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/studio_logo.svg");
+  background-repeat: no-repeat;
+  bottom: -15px;
+  right: -50px;
 }
