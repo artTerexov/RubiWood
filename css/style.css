@@ -253,8 +253,8 @@ a {
 }
 
 .portfolio {
-  padding: 0 100px;
-  padding-top: 120px
+  /*padding: 0 100px;*/
+  margin-top: 80px
 }
 
 .portfolio__title {
@@ -262,11 +262,93 @@ a {
   font-weight: 700;
   font-size: 40px;
   margin: 0;
+  padding: 0 100px;
+}
+
+.slider{
+    position: relative;
+    margin: auto;
+    height: 700px;
+    margin-top: 40px;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 700px;
+    border: none;
+    box-shadow: none;
+    vertical-align: middle;
+}
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    padding: 338px 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    /*border-radius: 0 3px 3px 0;*/
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(24,44,61, 0.8);
+}
+
+/* Кружочки */
+.slider-dots {
+  position: relative;
+    text-align: center;
+    margin-top: -50px;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .stages {
   padding: 0 100px;
-  padding-top: 120px;
+  margin-top: 120px;
 }
 
 .stages__name {
@@ -326,7 +408,7 @@ a {
 .contact {
   display: flex;
   position: relative;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 /*.contact::after {
@@ -367,7 +449,6 @@ a {
   font-size: 14px;
   width: 450px;
   padding-bottom: 30px;
-  letter-spacing: 1.5;
 }
 
 .contact__form {
@@ -436,7 +517,8 @@ a {
 }
 
 .trade-mark {
-  font-family: "Raleway-SemiBold", sans-serif;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
   font-size: 20px;
 }
 
@@ -497,3 +579,5 @@ a {
 .developer__name:active {
   color: #77b22a;
 }
+
+
