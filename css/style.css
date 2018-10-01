@@ -218,6 +218,11 @@ a {
   margin-top: 215px;
 }
 
+.advantages__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__number {
   font-family: "PlayfairDisplay-Bold", sans-serif;
   font-weight: 700;
