@@ -265,12 +265,13 @@ a {
   padding: 0 100px;
 }
 
-.slider{
+.slider {
     position: relative;
     margin: auto;
     height: 700px;
     margin-top: 40px;
 }
+
 /* Картинка мастабируется по отношению к родительскому элементу */
 .slider .item img {
     object-fit: cover;
@@ -280,22 +281,24 @@ a {
     box-shadow: none;
     vertical-align: middle;
 }
+
 /* Кнопки вперед и назад */
 .slider .prev, .slider .next {
     cursor: pointer;
     position: absolute;
     top: 0;
-    padding: 338px 50px;
+    padding: 338px 40px;
     color: white;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    /*border-radius: 0 3px 3px 0;*/
+     background-color: rgba(24,44,61, 0.4);
+     border: none;
 }
 .slider .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
+
 /* При наведении на кнопки добавляем фон кнопок */
 .slider .prev:hover,
 .slider .next:hover {
@@ -411,17 +414,6 @@ a {
   margin-top: 80px;
 }
 
-/*.contact::after {
-  content: "";
-  position: absolute;
-  width: 680px;
-  height: 683px;
-  background-color: rgba(24,44,61,1);
-  top: 0;
-  left: -105px;
-  z-index: -1;
-}
-*/
 .contact__title {
   font-family: "PlayfairDisplay-Bold", sans-serif;
   color: #ffffff;
@@ -460,7 +452,9 @@ a {
   width: 650px;
 }
 
-.contact__form input {
+.client-name,
+.client-phone,
+.client-mail {
   background-color: #182c3d;
   width: 480px;
   margin-bottom: 40px;
@@ -470,13 +464,29 @@ a {
   border-bottom: 2px solid #696969;
   outline: none;
   color: #ffffff;
+}
 
+.client-name {
+  background-image: url("../img/contact_name.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.client-phone {
+  background-image: url("../img/contact_phone.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.client-mail {
+  background-image: url("../img/contact_mail.png");
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .contact__img img {
   height: 100%;
   overflow: hidden;
-
 }
 
 .contact__send-button {
@@ -579,5 +589,3 @@ a {
 .developer__name:active {
   color: #77b22a;
 }
-
-
