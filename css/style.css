@@ -121,7 +121,7 @@ a {
   position: absolute;
   width: 12px;
   height: 15px;
-  background-image: url("../img/phone_logo.png");
+  background-image: url("../img/png/phone_logo.png");
   background-repeat: no-repeat;
   left: -20px;
 }
@@ -189,7 +189,7 @@ a {
   position: absolute;
   width: 40px;
   height: 10px;
-  background-image: url("../img/arrow-icon.png");
+  background-image: url("../img/png/arrow-icon.png");
   background-repeat: no-repeat;
   bottom: 22px;
   right: 50px;
@@ -252,8 +252,7 @@ a {
   line-height: 27px;
 }
 
-.portfolio {
-  /*padding: 0 100px;*/
+.portfolio {  
   margin-top: 80px
 }
 
@@ -266,51 +265,49 @@ a {
 }
 
 .slider {
-    position: relative;
-    margin: auto;
-    height: 700px;
-    margin-top: 40px;
+  position: relative;
+  margin: auto;
+  height: 700px;
+  margin-top: 40px;
 }
 
-/* Картинка мастабируется по отношению к родительскому элементу */
 .slider .item img {
-    object-fit: cover;
-    width: 100%;
-    height: 700px;
-    border: none;
-    box-shadow: none;
-    vertical-align: middle;
+  object-fit: cover;
+  width: 100%;
+  height: 700px;
+  border: none;
+  box-shadow: none;
+  vertical-align: middle;
 }
 
-/* Кнопки вперед и назад */
 .slider .prev, .slider .next {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    padding: 338px 40px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-     background-color: rgba(24,44,61, 0.4);
-     border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  padding: 340px 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  background-color: rgba(24,44,61, 0.4);
+  border: none;
 }
+
 .slider .next {
     right: 0;
 }
 
-/* При наведении на кнопки добавляем фон кнопок */
 .slider .prev:hover,
 .slider .next:hover {
     background-color: rgba(24,44,61, 0.8);
 }
 
-/* Кружочки */
 .slider-dots {
   position: relative;
     text-align: center;
     margin-top: -50px;
 }
+
 .slider-dots_item{
     cursor: pointer;
     height: 12px;
@@ -321,17 +318,19 @@ a {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active,
 .slider-dots_item:hover {
     background-color: #aaa;
 }
-/* Анимация слайдов */
+
 .slider .item {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 @-webkit-keyframes fade {
     from {
         opacity: .4
@@ -386,7 +385,7 @@ a {
   position: absolute;
   width: 40px;
   height: 1px;
-  background-image: url("../img/stage_line.png");
+  background-image: url("../img/png/stage_line.png");
   background-repeat: no-repeat;
   bottom: 0;
   left: 0;
@@ -467,19 +466,19 @@ a {
 }
 
 .client-name {
-  background-image: url("../img/contact_name.png");
+  background-image: url("../img/png/contact_name.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .client-phone {
-  background-image: url("../img/contact_phone.png");
+  background-image: url("../img/png/contact_phone.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .client-mail {
-  background-image: url("../img/contact_mail.png");
+  background-image: url("../img/png/contact_mail.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -576,7 +575,7 @@ a {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-image: url("../img/studio_logo.svg");
+  background-image: url("../img/svg/studio_logo.svg");
   background-repeat: no-repeat;
   bottom: -15px;
   right: -50px;

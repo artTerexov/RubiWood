@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta charset="utf-8">    
     <title>RubiWood</title>
-    <!-- <link href="css/normalize.css" type="text/css" rel="stylesheet"> -->
-    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/normalize-min.css" type="text/css" rel="stylesheet">
+    <link href="css/style-min.css" type="text/css" rel="stylesheet">
   </head>
   <body>
   <div class="body__wrapper">
     <header class="page-header">
-      <img class="page-header__bg" src="img/header_bg.jpeg" width="1163" height="595" alt="bg_img">
+      <img class="page-header__bg" src="img/jpg/header_bg.jpeg" width="1163" height="595" alt="bg_img">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <img class="page-header__logo-image" src="img/logo.png" width="167" height="64" alt="RubiWood_logo">
+            <img class="page-header__logo-image" src="img/png/logo.png" width="167" height="64" alt="RubiWood_logo">
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#advantages">Преимущества</a>
@@ -78,18 +77,17 @@
         <h2 class="portfolio__title">Портфолио</h2>
         <div class="slider">
           <div class="item">
-            <img src="img/bg1.jpg" alt="Первый слайд">
+            <img src="img/jpg/bg1.jpg" alt="Первый слайд">
           </div>
           <div class="item">
-            <img src="img/AdobeStock_213506904.jpeg" alt="Второй слайд">
+            <img src="img/jpg/header_bg.jpeg" alt="Второй слайд">
           </div>
         <div class="item">
-          <img src="img/bg1.jpg" alt="Третий слайд">         <
+          <img src="img/jpg/bg1.jpg" alt="Третий слайд">         
         </div>
     <a class="prev" onclick="minusSlide()">&#10094;</a>
     <a class="next" onclick="plusSlide()">&#10095;</a>
 </div>
-
 <div class="slider-dots">
     <span class="slider-dots_item" onclick="currentSlide(1)"></span>
     <span class="slider-dots_item" onclick="currentSlide(2)"></span>
@@ -101,42 +99,42 @@
         <ul class="stages__list">
           <li class="stages__item">
             <div class="stages__wrapper">
-              <img class="stages__img" src="img/stage_1.png" width="70" height="70" alt="Пункт 1">
+              <img class="stages__img" src="img/png/stage_1.png" width="70" height="70" alt="Пункт 1">
               <h3 class="stages__title">Консультация</h3>
             </div>
             <p class="stages__description">Обсуждаем задачи и пожелания, предлагаем варинты дизайна, оговариваем сроки</p>
           </li>
           <li class="stages__item">
             <div class="stages__wrapper">
-              <img class="stages__img" src="img/stage_2.png" width="70" height="70" alt="Пункт 1">
+              <img class="stages__img" src="img/png/stage_2.png" width="70" height="70" alt="Пункт 2">
               <h3 class="stages__title">Техническое задание</h3>
             </div>
             <p class="stages__description">Составляем техническое задание. Заключаем договор, в котором прописываем все этапы проекта</p>
           </li>
           <li class="stages__item">
             <div class="stages__wrapper">
-              <img class="stages__img" src="img/stage_3.png" width="70" height="70" alt="Пункт 1">
+              <img class="stages__img" src="img/png/stage_3.png" width="70" height="70" alt="Пункт 3">
               <h3 class="stages__title">Замеры и планировка</h3>
             </div>
             <p class="stages__description">Фиксируем необходимые размеры для эффективной работы</p>
           </li>
           <li class="stages__item">
             <div class="stages__wrapper">
-              <img class="stages__img" src="img/stage_4.png" width="70" height="70" alt="Пункт 1">
+              <img class="stages__img" src="img/png/stage_4.png" width="70" height="70" alt="Пункт 4">
               <h3 class="stages__title">Дизайн-концепция</h3>
             </div>
             <p class="stages__description">Создаем концепцию на основне пожеланий клиента, его образов и ощущений. </p>
           </li>
           <li class="stages__item">
             <div class="stages__wrapper">
-              <img class="stages__img" src="img/stage_5.png" width="70" height="70" alt="Пункт 1">
+              <img class="stages__img" src="img/png/stage_5.png" width="70" height="70" alt="Пункт 5">
               <h3 class="stages__title">Визуализация</h3>
             </div>
             <p class="stages__description">Создаем 3d визуализацию, позволяющую оценить изготавливаемую модель</p>
           </li>
           <li class="stages__item">
             <div class="stages__wrapper">
-              <img class="stages__img" src="img/stage_6.png" width="70" height="70" alt="Пункт 1">
+              <img class="stages__img" src="img/png/stage_6.png" width="70" height="70" alt="Пункт 6">
               <h3 class="stages__title">Комплектация изделия</h3>
             </div>
             <p class="stages__description">Подбираем качественные материалы, лучше всего подходящие изготавливаемой модели</p>
@@ -144,17 +142,17 @@
         </ul>
       </section>
       <section class="contact" id="contact">
-        <form class="contact__form" action="php/mail.php" method="post">
+        <form class="contact__form" action="php/mail.php" method="POST">
           <h2 class="contact__title">Мечтаете об интерьере от RubiWood?</h2>
           <p class="contact__add">Оставьте контактные данные, мы свяжемся с вами в течение 1 часа для уточнения всех деталей.</p>
-          <input class="client-name" name="client-name" type="text" name="client-name" placeholder="Имя*" autocomplete="off">
-          <input class="client-phone" name="client-phone" type="text" name="client-phone" placeholder="Телефон*" autocomplete="off">
-          <input class="client-mail" name="client-mail" type="text" name="client-mail" placeholder="E-mail" autocomplete="off">
-          <input type="submit" class="contact__send-button"></input>
+          <input class="client-name" name="client-name" type="text" placeholder="Имя*" autocomplete="off">
+          <input class="client-phone" type="text" name="client-phone" placeholder="Телефон*" autocomplete="off">
+          <input class="client-mail" type="text" name="client-mail" placeholder="E-mail" autocomplete="off">
+          <input type="submit" value="Отправить" class="contact__send-button">
           <p class="contact__inf">*Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных.</p>
         </form>
         <div class="contact__img">
-          <img src="img/kitchen.png" alt="Контакты">
+          <img src="img/png/kitchen.png" alt="Контакты">
         </div>
       </section>
       <footer class="page-footer" id="footer">
@@ -162,7 +160,7 @@
         <ul  class="social-list">
           <li class="social-item">
             <a class="social-button" href="https://vk.com/rubiwood"><span class="visually-hidden">Вконтакте</span>
-                <svg enable-background="new 0 0 100 100" height="50" version="1.1" viewBox="0 0 100 100" width="50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="color_x5F_fill"><path fill="#FFF" d="M84.418,69.921c-2.527,1.583-12.807,2.054-15.295,0.246c-1.365-0.991-2.613-2.232-3.799-3.412   c-0.828-0.826-1.77-1.227-2.482-2.123c-0.58-0.734-0.979-1.599-1.592-2.321c-1.033-1.215-2.625-2.248-3.885-0.764   c-1.895,2.231,0.299,6.617-2.229,8.285c-0.848,0.56-1.703,0.722-2.762,0.642l-2.346,0.107c-1.379,0.027-3.562,0.039-5.129-0.244   c-1.75-0.315-3.193-1.271-4.773-1.973c-3.002-1.331-5.863-3.145-8.039-5.658c-5.922-6.843-13.877-16.255-16.967-24.859   c-0.637-1.768-2.314-5.267-0.723-6.784c2.164-1.572,12.789-2.017,14.445,0.416c0.674,0.987,1.098,2.436,1.574,3.555   c0.592,1.396,0.914,2.713,1.84,3.949c0.82,1.097,1.426,2.199,2.061,3.402c0.713,1.349,1.385,2.643,2.252,3.886   c0.588,0.845,2.143,2.524,3.125,2.65c2.398,0.307,2.248-5.521,2.07-6.945c-0.17-1.371-0.215-2.825-0.17-4.216   c0.039-1.186,0.146-2.857-0.557-3.826c-1.145-1.58-3.695-0.397-3.895-2.52c0.422-0.603,0.332-1.138,3.146-2.064   c2.215-0.729,3.646-0.706,5.107-0.589c2.98,0.239,6.139-0.568,9.014,0.398c2.746,0.925,2.322,4.828,2.23,7.168   c-0.123,3.195,0.008,6.312,0,9.553c-0.004,1.477-0.062,2.912,1.736,2.793c1.688-0.113,1.859-1.532,2.664-2.704   c1.121-1.633,2.148-3.288,3.289-4.916c1.537-2.199,2-4.67,3.447-6.923c0.518-0.807,0.963-2.568,1.76-3.205   c0.604-0.481,1.75-0.275,2.48-0.275h1.736c1.33,0.016,2.686,0.035,4.051,0.083c1.967,0.068,4.17-0.359,6.121-0.084   c8.416,1.188-10.578,19.191-9.59,22.403c0.684,2.218,5.016,4.703,6.58,6.521C82.998,61.991,89.389,66.81,84.418,69.921z" fill="#4C75A3"/></g><g id="offset_x5F_print_x5F_outline"/></svg>
+                <svg enable-background="new 0 0 100 100" height="50" version="1.1" viewBox="0 0 100 100" width="50" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="color_x5F_fill"><path fill="#FFF" d="M84.418,69.921c-2.527,1.583-12.807,2.054-15.295,0.246c-1.365-0.991-2.613-2.232-3.799-3.412   c-0.828-0.826-1.77-1.227-2.482-2.123c-0.58-0.734-0.979-1.599-1.592-2.321c-1.033-1.215-2.625-2.248-3.885-0.764   c-1.895,2.231,0.299,6.617-2.229,8.285c-0.848,0.56-1.703,0.722-2.762,0.642l-2.346,0.107c-1.379,0.027-3.562,0.039-5.129-0.244   c-1.75-0.315-3.193-1.271-4.773-1.973c-3.002-1.331-5.863-3.145-8.039-5.658c-5.922-6.843-13.877-16.255-16.967-24.859   c-0.637-1.768-2.314-5.267-0.723-6.784c2.164-1.572,12.789-2.017,14.445,0.416c0.674,0.987,1.098,2.436,1.574,3.555   c0.592,1.396,0.914,2.713,1.84,3.949c0.82,1.097,1.426,2.199,2.061,3.402c0.713,1.349,1.385,2.643,2.252,3.886   c0.588,0.845,2.143,2.524,3.125,2.65c2.398,0.307,2.248-5.521,2.07-6.945c-0.17-1.371-0.215-2.825-0.17-4.216   c0.039-1.186,0.146-2.857-0.557-3.826c-1.145-1.58-3.695-0.397-3.895-2.52c0.422-0.603,0.332-1.138,3.146-2.064   c2.215-0.729,3.646-0.706,5.107-0.589c2.98,0.239,6.139-0.568,9.014,0.398c2.746,0.925,2.322,4.828,2.23,7.168   c-0.123,3.195,0.008,6.312,0,9.553c-0.004,1.477-0.062,2.912,1.736,2.793c1.688-0.113,1.859-1.532,2.664-2.704   c1.121-1.633,2.148-3.288,3.289-4.916c1.537-2.199,2-4.67,3.447-6.923c0.518-0.807,0.963-2.568,1.76-3.205   c0.604-0.481,1.75-0.275,2.48-0.275h1.736c1.33,0.016,2.686,0.035,4.051,0.083c1.967,0.068,4.17-0.359,6.121-0.084   c8.416,1.188-10.578,19.191-9.59,22.403c0.684,2.218,5.016,4.703,6.58,6.521C82.998,61.991,89.389,66.81,84.418,69.921z"/></g><g id="offset_x5F_print_x5F_outline"/></svg>
               </a>
           </li>
           <li class="social-item">
@@ -182,12 +180,11 @@
           </li>
         </ul>
         <a class="developer__link" href="https://github.com/artTerexov">
-          <p class="developer__name">art_Terex</p>
+          <p class="developer__name">Website by</p>
         </a>
       </footer>
     </main>
   </div>
-  <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/slider_js.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>  
   </body>
