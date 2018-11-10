@@ -252,7 +252,7 @@ a {
   line-height: 27px;
 }
 
-.portfolio {  
+.portfolio {
   margin-top: 80px
 }
 
@@ -266,7 +266,7 @@ a {
 
 .slider {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   height: 700px;
   margin-top: 40px;
 }
